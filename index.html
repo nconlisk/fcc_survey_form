@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC_survey_form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+<body id="survey-page">
+  <h1 id="title"> Yet Another Survey Form</h1>
+  
+  <p id="description">
+    Your response to our survey will help us refine our future services. Thank You!</p>
+  
+  <form id="survey-form">
+    <div class="form-group">
+    <label for="indoor" id="name-label">Name <input id="name" type="text" name="name" placeholder="Enter your name" required> </label>
+    </div>
+    
+    <div class="form-group">
+    <label for="email" id="email-label">Email 
+      <input id="email" type="email" name="email" placeholder="Enter your email" required> </label>
+      </div>
+    
+    <div class="form-group">
+    <label for="age" id="number-label">Age <input id="number" type="number" name="age" placeholder="10-100" min="10" max="100" required> </label>
+    </div>
+    
+    <div class="form-group">
+      <p>Which option best describes your current education level?</p>
+      <select id="dropdown" name="education level" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="school leaver">Some School</option>
+        <option value="school graduate">High School Graduate</option>
+        <option value="college student">College Graduate</option>
+        <option value="current student">Current Student</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+      
+    </div>
+    
+    <div class="form-group">
+      <p>Which of the following pets do you currently own?</p>
+       <label for="cat"><input id="cat" value="cat" type="radio" name="pet-select"> Cat</label></br>
+    <label for="dog"><input id="dog" value="dog" type="radio" name="pet-select"> Dog</label></br>
+  <label for="fish"><input id="fish" value="fish" type="radio" name="pet-select"> Fish</label></br>
+<label for="other"><input id="other" value="other" type="radio" name="pet-select"> Other</label></br>
+<label for="none"><input id="none" value="none" type="radio" name="pet-select"> None</label>
+    </div>
+      
+      
+      <div class="form-group">
+        <p>If you have a pet, which of the following best describes their personality?</p>
+    <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality"> Loving</label></br>
+        
+    <label for="lazy"><input id="lazy" value="lazy" type="checkbox" name="personality"> Lazy</label></br>
+    <label for="energetic"><input id="energetic" value="energetic" type="checkbox" name="personality"> Energetic</label><br>
+    </div>
+
+    <div class="form-group">
+      <p>Place any additional comments not covered by this survey in the text area below:</p>
+      <textarea id="textarea" placeholder="Additional comments..."></textarea>
+    </div>
+      
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    
+  </form>
+ 
+   </body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
